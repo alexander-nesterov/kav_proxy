@@ -1,5 +1,6 @@
 ## KAV-Proxy
 
+squid configuration file
 ```bash
 #---------------------------------------------------------
 #Squid
@@ -33,6 +34,7 @@ adaptation_access is_kav_req allow all
 adaptation_access is_kav_resp allow all
 ```
 
+nginx location
 ```bash
 location ~* /test {
                 access_log /var/log/nginx/test/test.access.log  log;
