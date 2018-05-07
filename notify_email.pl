@@ -371,7 +371,7 @@ sub send_email
     my $msg = MIME::Lite->new(
                               From    =>  EMAIL_FROM,
                               To      =>  EMAIL_TO,
-                              Subject => 'Kaspersky Antivirus for Linux Proxy Server',
+                              Subject => '%VERDICT%',
                               Type    => 'multipart/related'
                              );
     $msg->attach(Type => 'text/html', Data => $email_body);
